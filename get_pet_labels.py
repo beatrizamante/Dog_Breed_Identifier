@@ -19,10 +19,6 @@
 # Imports python modules
 from os import listdir
 
-# TODO 2: Define get_pet_labels function below please be certain to replace None
-#       in the return statement with results_dic dictionary that you create 
-#       with this function
-# 
 def get_pet_labels(image_dir):
     """
     Creates a dictionary of pet labels (results_dic) based upon the filenames 
@@ -45,18 +41,15 @@ def get_pet_labels(image_dir):
     filename_list = listdir(image_dir)
     
     for images in filename_list:
+        
         names = images.split('_')
         
         pet_label = ""
         
         for name in names:
-          if name.isalpha():
-            pet_label += name.lower() + " "
+            pet_label = " ".join([name.lower().strip() for name in names if name.isalpha()])
             
-        pet_label = pet_label.strip()
             
         results_dic[images] = [pet_label]
     
-    # Replace None with the results_dic dictionary that you created with this
-    # function
     return results_dic

@@ -62,7 +62,7 @@ def main():
     # this dictionary is returned from the function call as the variable results
     results = get_pet_labels(in_arg.dir)
 
-    # Function that checks Pet Images in the results Dictionary using results    
+    # Function that checks Pet Images in the results Dictionary using results  
     check_creating_pet_image_labels(results)
 
 
@@ -77,8 +77,7 @@ def main():
     classify_images(in_arg.dir, results, in_arg.arch)
 
     # Function that checks Results Dictionary using results    
-    check_classifying_images(results)    
-
+    check_classifying_images(results)   
     
     # TODO 4: Define adjust_results4_isadog function within the file adjust_results4_isadog.py
     # Once the adjust_results4_isadog function has been defined replace 'None' 
@@ -103,8 +102,8 @@ def main():
     results_stats = calculates_results_stats(results)
 
     # Function that checks Results Statistics Dictionary using results_stats
-    check_calculating_results(results, results_stats)
 
+    check_calculating_results(results, results_stats)
 
     # TODO 6: Define print_results function within the file print_results.py
     # Once the print_results function has been defined replace 'None' 
@@ -119,7 +118,7 @@ def main():
     end_time = time()
     
     # TODO 0: Computes overall runtime in seconds & prints it in hh:mm:ss format
-    tot_time = start_time - end_time; 
+    tot_time = end_time - start_time; 
     print("\nTotal Elapsed Runtime: ", str(int( (tot_time / 3600))) + ":" + str( int(  ( (tot_time % 3600) / 60 )  ) ) + ":" + 
           str( int(  ( (tot_time % 3600) % 60 ) ) ) , " in seconds.");
 

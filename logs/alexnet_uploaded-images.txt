@@ -67,11 +67,10 @@ Percentage of correct Dog: 100.0
 Percentage of correct Breed: 0.0
 Percentage of not-Dogs Images: 100.0
 Match                    : 0.0
-CLASSIFICATION INCORRECT FOR DOGS:
 
 
 CLASSIFICATION INCORRECT FOR BREEDS:
 Optimal: chihuahua                      Classifier: papillon                      
 Optimal: chihuahua                      Classifier: pomeranian                    
 
-Total Elapsed Runtime:  0:59:58  in seconds.
+Total Elapsed Runtime:  0:0:1  in seconds.
